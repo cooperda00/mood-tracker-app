@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <table>
+        <tr id="calendar-title">
+           <th colspan="7"><span id="calendar-month"></span>, <span id="calendar-year"></span></th> 
+        </tr>
+        <tr id="calendar-days">
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>  
+        </tr>
+    </table>
+    <div class="controls-container">
+        <div class="controls">
+            <button id="back">Back</button>
+    
+            <select id="date-month-select">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+        
+            <select id="date-year-select">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+            </select>
+        
+            <button id="forward">Forward</button>
+        </div>
+
+        <p id="controls-arrows">Use  <i class="fas fa-arrow-left"></i>  and  <i class="fas fa-arrow-right"></i>  to scroll</p>
+        
+        <p id="mood-select-label">Select a color for your mood:</p>
+        <input class="jscolor" value="D3D3D3" id="mood-selector">
+        
+        
+    </div>
+
+    <p class="details">- - Mood Tracking App built using jscolor, Moment.js and Calendar-js - -</p>
+    
+    <br>
+
+    
+    
+<script src="./scripts/jscolor.js"></script>
+<script src="./scripts/bundle.js"></script>
+
+</body>
+</html>
